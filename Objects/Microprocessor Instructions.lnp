@@ -1,0 +1,3 @@
+".\Objects\MULTIPLICAITON.obj" 
+TO ".\Objects\Microprocessor Instructions" 
+PRINT(".\Listings\Microprocessor Instructions.m51")
