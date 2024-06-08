@@ -1,4 +1,4 @@
-A51 MACRO ASSEMBLER  ADDITION                                                             06/08/2024 10:36:17 PAGE     1
+A51 MACRO ASSEMBLER  ADDITION                                                             06/08/2024 10:52:02 PAGE     1
 
 
 MACRO ASSEMBLER A51 V8.2.7.0
@@ -14,7 +14,7 @@ LOC  OBJ            LINE     SOURCE
 0005 25F0              4     ADD A,B
 0007 F590              5     MOV P1,A
                        6     END
-A51 MACRO ASSEMBLER  ADDITION                                                             06/08/2024 10:36:17 PAGE     2
+A51 MACRO ASSEMBLER  ADDITION                                                             06/08/2024 10:52:02 PAGE     2
 
 SYMBOL TABLE LISTING
 ------ ----- -------

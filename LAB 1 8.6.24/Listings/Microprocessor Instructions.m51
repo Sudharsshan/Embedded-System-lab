@@ -1,16 +1,16 @@
-BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    06/08/2024  10:41:01  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    06/08/2024  10:52:03  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
-C:\GAMES\KEIL_V5\C51\BIN\BL51.EXE .\Objects\MULTIPLICAITON.obj TO .\Objects\Microprocessor Instructions PRINT (.\Listing
->> s\Microprocessor Instructions.m51)
+C:\GAMES\KEIL_V5\C51\BIN\BL51.EXE .\Objects\ADDITION.obj TO .\Objects\Microprocessor Instructions PRINT (.\Listings\Micr
+>> oprocessor Instructions.m51)
 
 
 INPUT MODULES INCLUDED:
-  .\Objects\MULTIPLICAITON.obj (MULTIPLICAITON)
+  .\Objects\ADDITION.obj (ADDITION)
 
 
-LINK MAP OF MODULE:  .\Objects\Microprocessor Instructions (MULTIPLICAITON)
+LINK MAP OF MODULE:  .\Objects\Microprocessor Instructions (ADDITION)
 
 
             TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
@@ -20,27 +20,27 @@ LINK MAP OF MODULE:  .\Objects\Microprocessor Instructions (MULTIPLICAITON)
             REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
 
             * * * * * * *   C O D E   M E M O R Y   * * * * * * *
-            CODE    0000H     0008H     ABSOLUTE     
+            CODE    0000H     0009H     ABSOLUTE     
 
 
 
-SYMBOL TABLE OF MODULE:  .\Objects\Microprocessor Instructions (MULTIPLICAITON)
+SYMBOL TABLE OF MODULE:  .\Objects\Microprocessor Instructions (ADDITION)
 
   VALUE           TYPE          NAME
   ----------------------------------
 
-  -------         MODULE        MULTIPLICAITON
+  -------         MODULE        ADDITION
   D:00F0H         SYMBOL        B
   D:0090H         SYMBOL        P1
   C:0000H         LINE#         2
   C:0002H         LINE#         3
   C:0005H         LINE#         4
-  C:0006H         LINE#         5
-  -------         ENDMOD        MULTIPLICAITON
+  C:0007H         LINE#         5
+  -------         ENDMOD        ADDITION
 
 ******************************************************************************
-* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0008H BYTE ( 0%) *
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0009H BYTE ( 0%) *
 ******************************************************************************
 
-Program Size: data=8.0 xdata=0 code=8
+Program Size: data=8.0 xdata=0 code=9
 LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
