@@ -1,16 +1,16 @@
-BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    06/08/2024  10:52:03  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    06/08/2024  11:07:22  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
-C:\GAMES\KEIL_V5\C51\BIN\BL51.EXE .\Objects\ADDITION.obj TO .\Objects\Microprocessor Instructions PRINT (.\Listings\Micr
->> oprocessor Instructions.m51)
+C:\GAMES\KEIL_V5\C51\BIN\BL51.EXE .\Objects\ADDITION.obj TO .\Objects\Microprocessor Instructions for AT89C51 PRINT (.\L
+>> istings\Microprocessor Instructions for AT89C51.m51)
 
 
 INPUT MODULES INCLUDED:
   .\Objects\ADDITION.obj (ADDITION)
 
 
-LINK MAP OF MODULE:  .\Objects\Microprocessor Instructions (ADDITION)
+LINK MAP OF MODULE:  .\Objects\Microprocessor Instructions for AT89C51 (ADDITION)
 
 
             TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
@@ -24,7 +24,7 @@ LINK MAP OF MODULE:  .\Objects\Microprocessor Instructions (ADDITION)
 
 
 
-SYMBOL TABLE OF MODULE:  .\Objects\Microprocessor Instructions (ADDITION)
+SYMBOL TABLE OF MODULE:  .\Objects\Microprocessor Instructions for AT89C51 (ADDITION)
 
   VALUE           TYPE          NAME
   ----------------------------------

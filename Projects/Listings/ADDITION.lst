@@ -1,10 +1,10 @@
-A51 MACRO ASSEMBLER  ADDITION                                                             06/08/2024 10:52:02 PAGE     1
+A51 MACRO ASSEMBLER  ADDITION                                                             06/08/2024 11:07:21 PAGE     1
 
 
 MACRO ASSEMBLER A51 V8.2.7.0
 OBJECT MODULE PLACED IN .\Objects\ADDITION.obj
-ASSEMBLER INVOKED BY: C:\Games\Keil_V5\C51\BIN\A51.EXE ADDITION.asm SET(SMALL) DEBUG PRINT(.\Listings\ADDITION.lst) OBJE
-                      CT(.\Objects\ADDITION.obj) EP
+ASSEMBLER INVOKED BY: C:\Games\Keil_V5\C51\BIN\A51.EXE Programs\8.6.24\ADDITION.asm SET(SMALL) DEBUG PRINT(.\Listings\AD
+                      DITION.lst) OBJECT(.\Objects\ADDITION.obj) EP
 
 LOC  OBJ            LINE     SOURCE
 
@@ -14,7 +14,7 @@ LOC  OBJ            LINE     SOURCE
 0005 25F0              4     ADD A,B
 0007 F590              5     MOV P1,A
                        6     END
-A51 MACRO ASSEMBLER  ADDITION                                                             06/08/2024 10:52:02 PAGE     2
+A51 MACRO ASSEMBLER  ADDITION                                                             06/08/2024 11:07:21 PAGE     2
 
 SYMBOL TABLE LISTING
 ------ ----- -------
