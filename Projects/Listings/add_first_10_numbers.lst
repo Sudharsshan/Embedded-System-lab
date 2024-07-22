@@ -1,0 +1,33 @@
+A51 MACRO ASSEMBLER  ADD_FIRST_10_NUMBERS                                                 07/01/2024 15:13:07 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\add_first_10_numbers.obj
+ASSEMBLER INVOKED BY: C:\Games\Keil_V5\C51\BIN\A51.EXE Programs\1.7.24\add_first_10_numbers.asm SET(SMALL) DEBUG PRINT(.
+                      \Listings\add_first_10_numbers.lst) OBJECT(.\Objects\add_first_10_numbers.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000 780A              1     mov R0, #0AH
+0002 E8                2     mov A, R0
+0003 08                3     INC R0
+0004 88F0              4     mov B, R0
+0006 A4                5     mul AB
+0007 75F002            6     mov B, #02H
+000A 84                7     div AB
+*** WARNING #A41 IN 7 (Programs\1.7.24\add_first_10_numbers.asm, LINE 7): MISSING 'END' STATEMENT
+A51 MACRO ASSEMBLER  ADD_FIRST_10_NUMBERS                                                 07/01/2024 15:13:07 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  1 WARNING(S), 0 ERROR(S)

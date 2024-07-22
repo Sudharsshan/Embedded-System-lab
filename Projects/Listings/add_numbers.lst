@@ -1,0 +1,36 @@
+A51 MACRO ASSEMBLER  ADD_NUMBERS                                                          07/01/2024 15:29:16 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\add_numbers.obj
+ASSEMBLER INVOKED BY: C:\Games\Keil_V5\C51\BIN\A51.EXE Programs\1.7.24\add_numbers.asm SET(SMALL) DEBUG PRINT(.\Listings
+                      \add_numbers.lst) OBJECT(.\Objects\add_numbers.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000 7400              1                     mov a, #00h
+0002 780A              2                     mov r0, #0ah
+0004 75F001            3                     mov b, #01h
+0007 18                4                     dec r0
+0008 25F0              5     repeat: add a, b
+000A 05F0              6                     inc b
+000C 18                7                     dec r0
+000D 70F9              8                     jnz repeat
+000F F540              9                     mov 40h, a
+                      10                     end
+A51 MACRO ASSEMBLER  ADD_NUMBERS                                                          07/01/2024 15:29:16 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+REPEAT . . . . . .  C ADDR   0008H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

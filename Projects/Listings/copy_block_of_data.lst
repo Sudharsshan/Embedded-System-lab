@@ -1,0 +1,34 @@
+A51 MACRO ASSEMBLER  COPY_BLOCK_OF_DATA                                                   07/08/2024 14:52:31 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\copy_block_of_data.obj
+ASSEMBLER INVOKED BY: C:\Games\Keil_V5\C51\BIN\A51.EXE Programs\8.7.24\copy_block_of_data.asm SET(SMALL) DEBUG PRINT(.\L
+                      istings\copy_block_of_data.lst) OBJECT(.\Objects\copy_block_of_data.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000 7840              1                             MOV R0, #40H
+0002 7930              2                             MOV R1, #30H
+0004 7A05              3                             MOV R2, #05H
+0006 E7                4             LABEL:  MOV A, @R1
+0007 F6                5                             MOV @R0, A
+0008 08                6                             INC R0
+0009 09                7                             INC R1
+000A DAFA              8                             DJNZ R2, LABEL
+                       9                             END
+A51 MACRO ASSEMBLER  COPY_BLOCK_OF_DATA                                                   07/08/2024 14:52:31 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+LABEL. . . . . . .  C ADDR   0006H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

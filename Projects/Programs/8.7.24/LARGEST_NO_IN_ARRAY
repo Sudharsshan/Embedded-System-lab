@@ -1,0 +1,5 @@
+		MOV R1, #0Ah
+		MOV R0, #50H
+		DEC R1
+		MOV 60H, @R0
+REPEAT: 

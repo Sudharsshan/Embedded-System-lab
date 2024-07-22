@@ -1,0 +1,41 @@
+A51 MACRO ASSEMBLER  SMALLEST_NO_IN_ARRAY                                                 07/15/2024 14:24:37 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\smallest_no_in_array.obj
+ASSEMBLER INVOKED BY: C:\Games\Keil_V5\C51\BIN\A51.EXE Programs\15.7.24\smallest_no_in_array.asm SET(SMALL) DEBUG PRINT(
+                      .\Listings\smallest_no_in_array.lst) OBJECT(.\Objects\smallest_no_in_array.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000 790A              1                     MOV R1, #0AH
+0002 7850              2                     MOV R0, #50H
+0004 19                3                     DEC R1
+0005 8660              4                     MOV 60H, @R0
+0007 08                5     REPEAT: INC R0
+0008 E6                6                     MOV A, @R0
+0009 B56002            7                     CJNE A, 60H, SKIP
+000C 0112              8                     AJMP NEXT
+000E 5002              9     SKIP:   JNC NEXT
+0010 F560             10                     MOV 60H, A
+0012 D9F3             11     NEXT:   DJNZ R1, REPEAT
+0014 0114             12     STOP:   AJMP STOP
+                      13     END
+A51 MACRO ASSEMBLER  SMALLEST_NO_IN_ARRAY                                                 07/15/2024 14:24:37 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+NEXT . . . . . . .  C ADDR   0012H   A   
+REPEAT . . . . . .  C ADDR   0007H   A   
+SKIP . . . . . . .  C ADDR   000EH   A   
+STOP . . . . . . .  C ADDR   0014H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

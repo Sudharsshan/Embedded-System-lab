@@ -1,0 +1,42 @@
+A51 MACRO ASSEMBLER  ASCENDING_ORDER                                                      07/15/2024 14:33:42 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\Ascending_order.obj
+ASSEMBLER INVOKED BY: C:\Games\Keil_V5\C51\BIN\A51.EXE Programs\15.7.24\Ascending_order.asm SET(SMALL) DEBUG PRINT(.\Lis
+                      tings\Ascending_order.lst) OBJECT(.\Objects\Ascending_order.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1                     ORG 00H
+0000 7F04              2                     MOV R7, #04H
+0002 7840              3     LOOP1:  MOV R0, #40H
+0004 7E04              4                     MOV R6, #04H
+0006 E6                5     lOOP:   MOV A, @R0
+0007 8650              6                     MOV 50H, @R0
+0009 B55002            7                     CJNE A, 50H, NEXT
+000C 8004              8                     SJMP DOWN
+000E F6                9     NEXT:   MOV @R0, A
+000F 18               10                     DEC R0
+0010 A650             11                     MOV @R0, 50H
+0012 DEF2             12     DOWN:   DJNZ R6, LOOP
+0014 DFEC             13                     DJNZ R7, LOOP1
+                      14                     END
+A51 MACRO ASSEMBLER  ASCENDING_ORDER                                                      07/15/2024 14:33:42 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+DOWN . . . . . . .  C ADDR   0012H   A   
+LOOP . . . . . . .  C ADDR   0006H   A   
+LOOP1. . . . . . .  C ADDR   0002H   A   
+NEXT . . . . . . .  C ADDR   000EH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
