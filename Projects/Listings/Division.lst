@@ -1,4 +1,4 @@
-A51 MACRO ASSEMBLER  DIVISION                                                             07/15/2024 14:39:38 PAGE     1
+A51 MACRO ASSEMBLER  DIVISION                                                             07/22/2024 15:02:26 PAGE     1
 
 
 MACRO ASSEMBLER A51 V8.2.7.0
@@ -14,7 +14,7 @@ LOC  OBJ            LINE     SOURCE
 0005 84                4     DIV AB
 0006 F590              5     MOV P1,A
                        6     END
-A51 MACRO ASSEMBLER  DIVISION                                                             07/15/2024 14:39:38 PAGE     2
+A51 MACRO ASSEMBLER  DIVISION                                                             07/22/2024 15:02:26 PAGE     2
 
 SYMBOL TABLE LISTING
 ------ ----- -------

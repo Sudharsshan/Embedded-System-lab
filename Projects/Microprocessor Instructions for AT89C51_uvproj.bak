@@ -10,7 +10,7 @@
       <TargetName>Target 1</TargetName>
       <ToolsetNumber>0x0</ToolsetNumber>
       <ToolsetName>MCS-51</ToolsetName>
-      <uAC6>8</uAC6>
+      <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
           <Device>AT89C51</Device>
@@ -377,9 +377,9 @@
           <GroupName>Source Group 1</GroupName>
           <Files>
             <File>
-              <FileName>largest number using C.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Programs\27.7.24\largest number using C.c</FilePath>
+              <FileName>Division.asm</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\Programs\15.7.24\Division.asm</FilePath>
             </File>
           </Files>
         </Group>

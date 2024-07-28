@@ -1,16 +1,23 @@
-BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    07/15/2024  14:39:38  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    07/27/2024  09:42:22  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
-C:\GAMES\KEIL_V5\C51\BIN\BL51.EXE .\Objects\Division.obj TO .\Objects\Microprocessor Instructions for AT89C51 PRINT (.\L
->> istings\Microprocessor Instructions for AT89C51.m51)
+C:\GAMES\KEIL_V5\C51\BIN\BL51.EXE .\Objects\largest number using C.obj TO .\Objects\Microprocessor Instructions for AT89
+>> C51 PRINT (.\Listings\Microprocessor Instructions for AT89C51.m51)
+
+
+MEMORY MODEL: SMALL
 
 
 INPUT MODULES INCLUDED:
-  .\Objects\Division.obj (DIVISION)
+  .\Objects\largest number using C.obj (LARGEST_NUMBER_USING_C)
+  C:\GAMES\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\GAMES\KEIL_V5\C51\LIB\C51S.LIB (?C?COPY)
+  C:\GAMES\KEIL_V5\C51\LIB\C51S.LIB (?C?ULCMP)
+  C:\GAMES\KEIL_V5\C51\LIB\C51S.LIB (?C?LLDIDATA)
 
 
-LINK MAP OF MODULE:  .\Objects\Microprocessor Instructions for AT89C51 (DIVISION)
+LINK MAP OF MODULE:  .\Objects\Microprocessor Instructions for AT89C51 (LARGEST_NUMBER_USING_C)
 
 
             TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
@@ -18,29 +25,81 @@ LINK MAP OF MODULE:  .\Objects\Microprocessor Instructions for AT89C51 (DIVISION
 
             * * * * * * *   D A T A   M E M O R Y   * * * * * * *
             REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     001CH     UNIT         _DATA_GROUP_
+            IDATA   0024H     0001H     UNIT         ?STACK
 
             * * * * * * *   C O D E   M E M O R Y   * * * * * * *
-            CODE    0000H     0008H     ABSOLUTE     
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     0113H     UNIT         ?C?LIB_CODE
+            CODE    0913H     007EH     UNIT         ?PR?MAIN?LARGEST_NUMBER_USING_C
+            CODE    0991H     0014H     UNIT         ?CO?LARGEST_NUMBER_USING_C
+            CODE    09A5H     000CH     UNIT         ?C_C51STARTUP
 
 
 
-SYMBOL TABLE OF MODULE:  .\Objects\Microprocessor Instructions for AT89C51 (DIVISION)
+OVERLAY MAP OF MODULE:   .\Objects\Microprocessor Instructions for AT89C51 (LARGEST_NUMBER_USING_C)
+
+
+SEGMENT                                   DATA_GROUP 
+  +--> CALLED SEGMENT                   START    LENGTH
+-------------------------------------------------------
+?C_C51STARTUP                           -----    -----
+  +--> ?PR?MAIN?LARGEST_NUMBER_USING_C
+
+?PR?MAIN?LARGEST_NUMBER_USING_C         0008H    001CH
+  +--> ?CO?LARGEST_NUMBER_USING_C
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\Microprocessor Instructions for AT89C51 (LARGEST_NUMBER_USING_C)
 
   VALUE           TYPE          NAME
   ----------------------------------
 
-  -------         MODULE        DIVISION
-  D:00F0H         SYMBOL        B
-  D:0090H         SYMBOL        P1
-  C:0000H         LINE#         2
-  C:0002H         LINE#         3
-  C:0005H         LINE#         4
-  C:0006H         LINE#         5
-  -------         ENDMOD        DIVISION
+  -------         MODULE        LARGEST_NUMBER_USING_C
+  C:0000H         SYMBOL        _ICE_DUMMY_
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  07/27/2024  09:42:22  PAGE 2
+
+
+  C:0913H         PUBLIC        main
+  C:0991H         SYMBOL        _?ix1000
+  -------         PROC          MAIN
+  -------         DO            
+  D:0008H         SYMBOL        array
+  D:001CH         SYMBOL        i
+  D:0020H         SYMBOL        largest
+  -------         ENDDO         
+  C:0913H         LINE#         2
+  C:0913H         LINE#         3
+  C:0913H         LINE#         4
+  C:0926H         LINE#         5
+  C:092FH         LINE#         6
+  C:094BH         LINE#         7
+  C:094BH         LINE#         8
+  C:0965H         LINE#         9
+  C:0965H         LINE#         10
+  C:0979H         LINE#         11
+  C:0979H         LINE#         12
+  C:0990H         LINE#         13
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        LARGEST_NUMBER_USING_C
+
+  -------         MODULE        ?C?COPY
+  C:08D0H         PUBLIC        ?C?COPY
+  -------         ENDMOD        ?C?COPY
+
+  -------         MODULE        ?C?ULCMP
+  C:08F6H         PUBLIC        ?C?ULCMP
+  -------         ENDMOD        ?C?ULCMP
+
+  -------         MODULE        ?C?LLDIDATA
+  C:0907H         PUBLIC        ?C?LLDIDATA
+  -------         ENDMOD        ?C?LLDIDATA
 
 ******************************************************************************
-* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0008H BYTE ( 0%) *
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0092H BYTE ( 7%) *
 ******************************************************************************
 
-Program Size: data=8.0 xdata=0 code=8
+Program Size: data=37.0 xdata=0 code=436
 LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
