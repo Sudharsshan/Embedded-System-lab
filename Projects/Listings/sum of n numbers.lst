@@ -1,0 +1,32 @@
+C51 COMPILER V9.60.7.0   SUM_OF_N_NUMBERS                                                  07/29/2024 15:34:04 PAGE 1   
+
+
+C51 COMPILER V9.60.7.0, COMPILATION OF MODULE SUM_OF_N_NUMBERS
+OBJECT MODULE PLACED IN .\Objects\sum of n numbers.obj
+COMPILER INVOKED BY: C:\Games\Keil_V5\C51\BIN\C51.EXE Programs\29.7.24\sum of n numbers.c OPTIMIZE(8,SPEED) BROWSE DEBUG
+                    - OBJECTEXTEND PRINT(.\Listings\sum of n numbers.lst) TABS(2) OBJECT(.\Objects\sum of n numbers.obj)
+
+line level    source
+
+   1          #include<reg51.h>
+   2          void main(){
+   3   1        unsigned int i, j = 1, count = 0;
+   4   1        for(i = 0; i < 10; i ++){
+   5   2          count = count + 1;
+   6   2          j++;
+   7   2        }
+   8   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     31    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

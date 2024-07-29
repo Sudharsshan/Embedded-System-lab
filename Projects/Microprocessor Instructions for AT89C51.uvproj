@@ -377,9 +377,9 @@
           <GroupName>Source Group 1</GroupName>
           <Files>
             <File>
-              <FileName>largest number using C.c</FileName>
+              <FileName>sum of n numbers.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\Programs\27.7.24\largest number using C.c</FilePath>
+              <FilePath>.\Programs\29.7.24\sum of n numbers.c</FilePath>
             </File>
           </Files>
         </Group>

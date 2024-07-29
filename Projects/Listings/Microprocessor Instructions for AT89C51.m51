@@ -1,23 +1,25 @@
-BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    07/27/2024  09:42:22  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    07/29/2024  14:47:59  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
-C:\GAMES\KEIL_V5\C51\BIN\BL51.EXE .\Objects\largest number using C.obj TO .\Objects\Microprocessor Instructions for AT89
->> C51 PRINT (.\Listings\Microprocessor Instructions for AT89C51.m51)
+C:\GAMES\KEIL_V5\C51\BIN\BL51.EXE .\Objects\ascending_order.obj TO .\Objects\Microprocessor Instructions for AT89C51 PRI
+>> NT (.\Listings\Microprocessor Instructions for AT89C51.m51)
 
 
 MEMORY MODEL: SMALL
 
 
 INPUT MODULES INCLUDED:
-  .\Objects\largest number using C.obj (LARGEST_NUMBER_USING_C)
+  .\Objects\ascending_order.obj (ASCENDING_ORDER)
   C:\GAMES\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
   C:\GAMES\KEIL_V5\C51\LIB\C51S.LIB (?C?COPY)
   C:\GAMES\KEIL_V5\C51\LIB\C51S.LIB (?C?ULCMP)
   C:\GAMES\KEIL_V5\C51\LIB\C51S.LIB (?C?LLDIDATA)
+  C:\GAMES\KEIL_V5\C51\LIB\C51S.LIB (?C?LLDIDATA0)
+  C:\GAMES\KEIL_V5\C51\LIB\C51S.LIB (?C?LSTIDATA)
 
 
-LINK MAP OF MODULE:  .\Objects\Microprocessor Instructions for AT89C51 (LARGEST_NUMBER_USING_C)
+LINK MAP OF MODULE:  .\Objects\Microprocessor Instructions for AT89C51 (ASCENDING_ORDER)
 
 
             TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
@@ -25,65 +27,66 @@ LINK MAP OF MODULE:  .\Objects\Microprocessor Instructions for AT89C51 (LARGEST_
 
             * * * * * * *   D A T A   M E M O R Y   * * * * * * *
             REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
-            DATA    0008H     001CH     UNIT         _DATA_GROUP_
-            IDATA   0024H     0001H     UNIT         ?STACK
+            DATA    0008H     0020H     UNIT         _DATA_GROUP_
+            IDATA   0028H     0001H     UNIT         ?STACK
 
             * * * * * * *   C O D E   M E M O R Y   * * * * * * *
             CODE    0000H     0003H     ABSOLUTE     
                     0003H     07FDH                  *** GAP ***
-            CODE    0800H     0113H     UNIT         ?C?LIB_CODE
-            CODE    0913H     007EH     UNIT         ?PR?MAIN?LARGEST_NUMBER_USING_C
-            CODE    0991H     0014H     UNIT         ?CO?LARGEST_NUMBER_USING_C
-            CODE    09A5H     000CH     UNIT         ?C_C51STARTUP
+            CODE    0800H     012CH     UNIT         ?C?LIB_CODE
+            CODE    092CH     00DEH     UNIT         ?PR?MAIN?ASCENDING_ORDER
+            CODE    0A0AH     0014H     UNIT         ?CO?ASCENDING_ORDER
+            CODE    0A1EH     000CH     UNIT         ?C_C51STARTUP
 
 
 
-OVERLAY MAP OF MODULE:   .\Objects\Microprocessor Instructions for AT89C51 (LARGEST_NUMBER_USING_C)
+OVERLAY MAP OF MODULE:   .\Objects\Microprocessor Instructions for AT89C51 (ASCENDING_ORDER)
 
 
-SEGMENT                                   DATA_GROUP 
-  +--> CALLED SEGMENT                   START    LENGTH
--------------------------------------------------------
-?C_C51STARTUP                           -----    -----
-  +--> ?PR?MAIN?LARGEST_NUMBER_USING_C
+SEGMENT                            DATA_GROUP 
+  +--> CALLED SEGMENT            START    LENGTH
+------------------------------------------------
+?C_C51STARTUP                    -----    -----
+  +--> ?PR?MAIN?ASCENDING_ORDER
 
-?PR?MAIN?LARGEST_NUMBER_USING_C         0008H    001CH
-  +--> ?CO?LARGEST_NUMBER_USING_C
+?PR?MAIN?ASCENDING_ORDER         0008H    0020H
+  +--> ?CO?ASCENDING_ORDER
 
 
 
-SYMBOL TABLE OF MODULE:  .\Objects\Microprocessor Instructions for AT89C51 (LARGEST_NUMBER_USING_C)
+SYMBOL TABLE OF MODULE:  .\Objects\Microprocessor Instructions for AT89C51 (ASCENDING_ORDER)
 
   VALUE           TYPE          NAME
   ----------------------------------
 
-  -------         MODULE        LARGEST_NUMBER_USING_C
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  07/29/2024  14:47:59  PAGE 2
+
+
+  -------         MODULE        ASCENDING_ORDER
   C:0000H         SYMBOL        _ICE_DUMMY_
-BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  07/27/2024  09:42:22  PAGE 2
-
-
-  C:0913H         PUBLIC        main
-  C:0991H         SYMBOL        _?ix1000
+  C:092CH         PUBLIC        main
+  C:0A0AH         SYMBOL        _?ix1000
   -------         PROC          MAIN
   -------         DO            
   D:0008H         SYMBOL        array
-  D:001CH         SYMBOL        i
-  D:0020H         SYMBOL        largest
+  D:001CH         SYMBOL        temp
+  D:0020H         SYMBOL        i
+  D:0024H         SYMBOL        j
   -------         ENDDO         
-  C:0913H         LINE#         2
-  C:0913H         LINE#         3
-  C:0913H         LINE#         4
-  C:0926H         LINE#         5
-  C:092FH         LINE#         6
-  C:094BH         LINE#         7
-  C:094BH         LINE#         8
-  C:0965H         LINE#         9
-  C:0965H         LINE#         10
-  C:0979H         LINE#         11
-  C:0979H         LINE#         12
-  C:0990H         LINE#         13
+  C:092CH         LINE#         2
+  C:092CH         LINE#         3
+  C:093FH         LINE#         5
+  C:095FH         LINE#         6
+  C:097CH         LINE#         7
+  C:0999H         LINE#         8
+  C:09ADH         LINE#         9
+  C:09C5H         LINE#         10
+  C:09D9H         LINE#         11
+  C:09D9H         LINE#         12
+  C:09F1H         LINE#         13
+  C:0A09H         LINE#         14
   -------         ENDPROC       MAIN
-  -------         ENDMOD        LARGEST_NUMBER_USING_C
+  -------         ENDMOD        ASCENDING_ORDER
 
   -------         MODULE        ?C?COPY
   C:08D0H         PUBLIC        ?C?COPY
@@ -97,9 +100,17 @@ SYMBOL TABLE OF MODULE:  .\Objects\Microprocessor Instructions for AT89C51 (LARG
   C:0907H         PUBLIC        ?C?LLDIDATA
   -------         ENDMOD        ?C?LLDIDATA
 
+  -------         MODULE        ?C?LLDIDATA0
+  C:0913H         PUBLIC        ?C?LLDIDATA0
+  -------         ENDMOD        ?C?LLDIDATA0
+
+  -------         MODULE        ?C?LSTIDATA
+  C:0920H         PUBLIC        ?C?LSTIDATA
+  -------         ENDMOD        ?C?LSTIDATA
+
 ******************************************************************************
-* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0092H BYTE ( 7%) *
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 00F2H BYTE (11%) *
 ******************************************************************************
 
-Program Size: data=37.0 xdata=0 code=436
+Program Size: data=41.0 xdata=0 code=557
 LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
