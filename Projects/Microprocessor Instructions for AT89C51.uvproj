@@ -377,9 +377,9 @@
           <GroupName>Source Group 1</GroupName>
           <Files>
             <File>
-              <FileName>sum of n numbers.c</FileName>
+              <FileName>even_or_odd_copy_to_new_location.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\Programs\29.7.24\sum of n numbers.c</FilePath>
+              <FilePath>.\Programs\1.8.24\even_or_odd_copy_to_new_location.c</FilePath>
             </File>
           </Files>
         </Group>

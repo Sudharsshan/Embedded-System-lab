@@ -1,0 +1,44 @@
+C51 COMPILER V9.60.7.0   EVEN_OR_ODD_COPY_TO_NEW_LOCATION                                  08/01/2024 12:22:06 PAGE 1   
+
+
+C51 COMPILER V9.60.7.0, COMPILATION OF MODULE EVEN_OR_ODD_COPY_TO_NEW_LOCATION
+OBJECT MODULE PLACED IN .\Objects\even_or_odd_copy_to_new_location.obj
+COMPILER INVOKED BY: C:\Games\Keil_V5\C51\BIN\C51.EXE Programs\1.8.24\even_or_odd_copy_to_new_location.c OPTIMIZE(8,SPEE
+                    -D) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\even_or_odd_copy_to_new_location.lst) TABS(2) OBJECT(.\Objects\even_or_odd
+                    -_copy_to_new_location.obj)
+
+line level    source
+
+   1          #include<reg51.h>
+   2          void main(){
+   3   1        unsigned long array[] = { 0x21312321, 0x23423432, 0x32541232, 0x65748312, 0x12345678};
+   4   1        unsigned long even[5], odd[5];
+   5   1        unsigned long i, evenCount = 0, oddCount = 0;
+   6   1        for(i - 0; i < 5; i++)
+   7   1        {
+   8   2          if(array[i]% 2 == 0)
+   9   2          {
+  10   3            even[evenCount] = array[i];
+  11   3            evenCount = evenCount + 1;
+  12   3          }
+  13   2          else
+  14   2          {
+  15   3            odd[oddCount] = array[i];
+  16   3            oddCount = oddCount + 1;
+  17   3          }
+  18   2        }
+  19   1        }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    206    ----
+   CONSTANT SIZE    =     20    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----      72
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

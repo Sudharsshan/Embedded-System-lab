@@ -1,25 +1,24 @@
-BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    07/29/2024  14:47:59  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    08/01/2024  12:22:06  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
-C:\GAMES\KEIL_V5\C51\BIN\BL51.EXE .\Objects\ascending_order.obj TO .\Objects\Microprocessor Instructions for AT89C51 PRI
->> NT (.\Listings\Microprocessor Instructions for AT89C51.m51)
+C:\GAMES\KEIL_V5\C51\BIN\BL51.EXE .\Objects\even_or_odd_copy_to_new_location.obj TO .\Objects\Microprocessor Instruction
+>> s for AT89C51 PRINT (.\Listings\Microprocessor Instructions for AT89C51.m51)
 
 
 MEMORY MODEL: SMALL
 
 
 INPUT MODULES INCLUDED:
-  .\Objects\ascending_order.obj (ASCENDING_ORDER)
+  .\Objects\even_or_odd_copy_to_new_location.obj (EVEN_OR_ODD_COPY_TO_NEW_LOCATION)
   C:\GAMES\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
   C:\GAMES\KEIL_V5\C51\LIB\C51S.LIB (?C?COPY)
   C:\GAMES\KEIL_V5\C51\LIB\C51S.LIB (?C?ULCMP)
   C:\GAMES\KEIL_V5\C51\LIB\C51S.LIB (?C?LLDIDATA)
-  C:\GAMES\KEIL_V5\C51\LIB\C51S.LIB (?C?LLDIDATA0)
   C:\GAMES\KEIL_V5\C51\LIB\C51S.LIB (?C?LSTIDATA)
 
 
-LINK MAP OF MODULE:  .\Objects\Microprocessor Instructions for AT89C51 (ASCENDING_ORDER)
+LINK MAP OF MODULE:  .\Objects\Microprocessor Instructions for AT89C51 (EVEN_OR_ODD_COPY_TO_NEW_LOCATION)
 
 
             TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
@@ -27,66 +26,72 @@ LINK MAP OF MODULE:  .\Objects\Microprocessor Instructions for AT89C51 (ASCENDIN
 
             * * * * * * *   D A T A   M E M O R Y   * * * * * * *
             REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
-            DATA    0008H     0020H     UNIT         _DATA_GROUP_
-            IDATA   0028H     0001H     UNIT         ?STACK
+            DATA    0008H     0048H     UNIT         _DATA_GROUP_
+            IDATA   0050H     0001H     UNIT         ?STACK
 
             * * * * * * *   C O D E   M E M O R Y   * * * * * * *
             CODE    0000H     0003H     ABSOLUTE     
                     0003H     07FDH                  *** GAP ***
-            CODE    0800H     012CH     UNIT         ?C?LIB_CODE
-            CODE    092CH     00DEH     UNIT         ?PR?MAIN?ASCENDING_ORDER
-            CODE    0A0AH     0014H     UNIT         ?CO?ASCENDING_ORDER
-            CODE    0A1EH     000CH     UNIT         ?C_C51STARTUP
+            CODE    0800H     011FH     UNIT         ?C?LIB_CODE
+            CODE    091FH     00CEH     UNIT         ?PR?MAIN?EVEN_OR_ODD_COPY_TO_NEW_LOCATION
+            CODE    09EDH     0014H     UNIT         ?CO?EVEN_OR_ODD_COPY_TO_NEW_LOCATION
+            CODE    0A01H     000CH     UNIT         ?C_C51STARTUP
 
 
 
-OVERLAY MAP OF MODULE:   .\Objects\Microprocessor Instructions for AT89C51 (ASCENDING_ORDER)
+OVERLAY MAP OF MODULE:   .\Objects\Microprocessor Instructions for AT89C51 (EVEN_OR_ODD_COPY_TO_NEW_LOCATION)
 
 
-SEGMENT                            DATA_GROUP 
-  +--> CALLED SEGMENT            START    LENGTH
-------------------------------------------------
-?C_C51STARTUP                    -----    -----
-  +--> ?PR?MAIN?ASCENDING_ORDER
+SEGMENT                                            DATA_GROUP 
+  +--> CALLED SEGMENT                            START    LENGTH
+----------------------------------------------------------------
+?C_C51STARTUP                                    -----    -----
+  +--> ?PR?MAIN?EVEN_OR_ODD_COPY_TO_NEW_LOCA...
 
-?PR?MAIN?ASCENDING_ORDER         0008H    0020H
-  +--> ?CO?ASCENDING_ORDER
+?PR?MAIN?EVEN_OR_ODD_COPY_TO_NEW_LOCA...         0008H    0048H
+  +--> ?CO?EVEN_OR_ODD_COPY_TO_NEW_LOCATION
 
 
 
-SYMBOL TABLE OF MODULE:  .\Objects\Microprocessor Instructions for AT89C51 (ASCENDING_ORDER)
+SYMBOL TABLE OF MODULE:  .\Objects\Microprocessor Instructions for AT89C51 (EVEN_OR_ODD_COPY_TO_NEW_LOCATION)
 
   VALUE           TYPE          NAME
   ----------------------------------
 
-BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  07/29/2024  14:47:59  PAGE 2
+  -------         MODULE        EVEN_OR_ODD_COPY_TO_NEW_LOCATION
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  08/01/2024  12:22:06  PAGE 2
 
 
-  -------         MODULE        ASCENDING_ORDER
   C:0000H         SYMBOL        _ICE_DUMMY_
-  C:092CH         PUBLIC        main
-  C:0A0AH         SYMBOL        _?ix1000
+  C:091FH         PUBLIC        main
+  C:09EDH         SYMBOL        _?ix1000
   -------         PROC          MAIN
   -------         DO            
   D:0008H         SYMBOL        array
-  D:001CH         SYMBOL        temp
-  D:0020H         SYMBOL        i
-  D:0024H         SYMBOL        j
+  D:001CH         SYMBOL        even
+  D:0030H         SYMBOL        odd
+  D:0044H         SYMBOL        i
+  D:0048H         SYMBOL        evenCount
+  D:004CH         SYMBOL        oddCount
   -------         ENDDO         
-  C:092CH         LINE#         2
-  C:092CH         LINE#         3
-  C:093FH         LINE#         5
-  C:095FH         LINE#         6
-  C:097CH         LINE#         7
-  C:0999H         LINE#         8
-  C:09ADH         LINE#         9
-  C:09C5H         LINE#         10
-  C:09D9H         LINE#         11
-  C:09D9H         LINE#         12
-  C:09F1H         LINE#         13
-  C:0A09H         LINE#         14
+  C:091FH         LINE#         2
+  C:091FH         LINE#         3
+  C:0932H         LINE#         5
+  C:0943H         LINE#         6
+  C:095AH         LINE#         7
+  C:095AH         LINE#         8
+  C:0978H         LINE#         9
+  C:0978H         LINE#         10
+  C:0990H         LINE#         11
+  C:09A5H         LINE#         12
+  C:09A7H         LINE#         14
+  C:09A7H         LINE#         15
+  C:09BFH         LINE#         16
+  C:09D4H         LINE#         17
+  C:09D4H         LINE#         18
+  C:09ECH         LINE#         19
   -------         ENDPROC       MAIN
-  -------         ENDMOD        ASCENDING_ORDER
+  -------         ENDMOD        EVEN_OR_ODD_COPY_TO_NEW_LOCATION
 
   -------         MODULE        ?C?COPY
   C:08D0H         PUBLIC        ?C?COPY
@@ -100,17 +105,13 @@ SYMBOL TABLE OF MODULE:  .\Objects\Microprocessor Instructions for AT89C51 (ASCE
   C:0907H         PUBLIC        ?C?LLDIDATA
   -------         ENDMOD        ?C?LLDIDATA
 
-  -------         MODULE        ?C?LLDIDATA0
-  C:0913H         PUBLIC        ?C?LLDIDATA0
-  -------         ENDMOD        ?C?LLDIDATA0
-
   -------         MODULE        ?C?LSTIDATA
-  C:0920H         PUBLIC        ?C?LSTIDATA
+  C:0913H         PUBLIC        ?C?LSTIDATA
   -------         ENDMOD        ?C?LSTIDATA
 
 ******************************************************************************
-* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 00F2H BYTE (11%) *
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 00E2H BYTE (11%) *
 ******************************************************************************
 
-Program Size: data=41.0 xdata=0 code=557
+Program Size: data=81.0 xdata=0 code=528
 LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
